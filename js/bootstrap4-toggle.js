@@ -62,7 +62,7 @@
 			.addClass(size)
 		var $toggleGroup = $('<div class="toggle-group">')
 			.append($toggleOn, $toggleOff, $toggleHandle)
-		var $toggle = $('<div class="toggle btn" data-toggle="toggle" role="button">')
+		var $toggle = $('<div class="toggle btn" data-toggle="toggle" role="button" title="' + this.$element.prop('title') + '">')
 			.addClass( this.$element.prop('checked') ? this._onstyle : this._offstyle+' off' )
 			.addClass(size).addClass(this.options.style)
 
